@@ -9,3 +9,4 @@ scikit-learn==1.2.0
 scipy==1.9.3
 seaborn==0.12.2
 SQLAlchemy==1.4.46
+umap-learn==0.5.3
