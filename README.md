@@ -46,8 +46,7 @@ O planejamento da solução foi divido em três etapas:
 ## 3.1. Produto Final
 O produto final será uma lista com os clientes agrupados, gerando o Programa Insiders, e o relatório respondendo as perguntas de negócio do time de marketing.
 
-Além disso com o modelo gerado com os dados dos clientes atuais, será criado um sistema em produção para classificação de novos clientes nos clusters, que em seguida são inseridos em um banco de dados Postgres para visualização através de dashboards online e localmente, através do *Power BI* e *Metabase*, respectivamente.
-
+Além disso com o modelo gerado com os dados dos clientes atuais, será criado um sistema em produção para classificação de novos clientes nos clusters, que em seguida são inseridos em um banco de dados Postgres para visualização através de dashboards online e localmente, através do *Power BI*.
 ## 3.2. Processo
 
 ### _Entendendo o problema de negócio_
@@ -83,7 +82,7 @@ Análise dos clusters gerados e uso dos dados para responder as perguntas do tim
 ### _Relatório e Deploy do Modelo_
 * Relatório com os resultados obtidos
 * Modelo em produção para classificação de novos clientes
-* Dashboars em Power BI e Metabase, online e local respectivamente.
+* Dashboards em Power BI, online e local.
 
 ## 3.3. Ferramentas
 * Python 3.8.12
@@ -94,6 +93,7 @@ Análise dos clusters gerados e uso dos dados para responder as perguntas do tim
 * Técnicas de redução de dimensionamento: PCA, t-SNE e UMAP/Random Forest
 * Algoritmos de Clusterização (K-Means, Gaussian Mixture Model, Hierarchical Clustering e DBSCAN)
 * Métrica de performance: _Silhouette Score_
+* Power BI Desktop e Service
 
 # 4. Modelos de Machine Learning
 Para melhorar o espaço de dados foram implementadas técnicas de redução de dimensionalidade:
@@ -136,10 +136,15 @@ Com os clusters formados os seguintes Insights foram gerados:
 Para deploy do modelo foram utilizados serviços da AWS (Amazon Web Service)
 
 * Criação de um _Bucket_ na Amazon S3 (Simple Storage Service) para armazenamento dos datasets dos clientes e modelos treinados para classificação dos novos clientes.
-* Criação de um Banco de Dados Postegres na Amazon RDS (Relational Database Service) para armazenamento dos dados dos clientes agrupados, disponível para acesso para desenvolvimento de Dashboards em Power BI e Metabase.
+* Criação de um Banco de Dados Postegres na Amazon RDS (Relational Database Service) para armazenamento dos dados dos clientes agrupados, disponível para acesso para desenvolvimento de Dashboards em Power BI.
 * Instância na Amazon EC2 (Elastic Compute Cloud) com computador virtual Linux que acessa os dados e modelos para classificação de novos clientes, realizando as tarefas de modo automático através de agendador de tarefas (CronJob e PaperMill).
 
 ![Deploy AWS](img/Deploy-AWS.png)
+
+Com o modelo implementado, foram gerados o [Relatório]() respondendo as necessidades do time de marketing, uma lista com os [clientes classificados](reports/clusters.csv), uma versão estática do [Dashboard](reports/Dashboard%20Programa%20Insiders.pdf) para fins de conveniência e a **versão interativa** do Dashboard publicado no _Power BI Service_, disponível no botão abaixo.
+
+[<img style="display: block; margin-right: auto; margin-left: auto" src="https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" width="250" />](https://app.powerbi.com/view?r=eyJrIjoiN2Y3ZTExOWQtOTdkMS00YTA0LTgyOWUtMzIxNzQ1ZWIyMjM3IiwidCI6ImRjNzFjN2RmLTFiMjItNDFiNS05NDFkLTcyNTA4YTM4NzQ2NiJ9)
+
 
 # 7. Conclusão
 O objetivo de agrupar os clientes para o novo programa de fidelidade foi alcançado, sendo entregue um relatório e Insights para o time de marketing. Além de Dashboards e um modelo automático para integração de novos clientes.
