@@ -10,7 +10,7 @@ Em pouco mais de 1 ano de operação, o time de marketing percebeu que alguns cl
 Com essa informação, o time de marketing planeja lançar um programa de fidelidade para os melhores clientes da base, nomeado **Insiders**. Porém o time não possui conhecimento avançado em análise de dados para eleger os participantes do programa.
 
 # 1. Questão de negócio
-Para uma seleção de clientes elegíveis ao programa, utilizando técnincas avançadas de manipulação de dados, a tarefa foi requistada ao time de dados.
+Para uma seleção de clientes elegíveis ao programa, utilizando técnincas avançadas de manipulação de dados, a tarefa foi requisitada ao time de dados.
 
 O resultado será uma lista de pessoas elegíveis, com a qual o time de marketing fará uma sequência de ações personalizadas e exclusivas para o grupo, visando aumentar o faturamento e a frequência de compra. Além de um relatório com as seguintes questões respondidas:
 
@@ -155,4 +155,5 @@ O objetivo de agrupar os clientes para o novo programa de fidelidade foi alcanç
 # 8. Próximos passos
 * Criar novas features para melhorar o modelo.
 * Obter mais dados referentes aos clientes.
+* Utilizar as datas de emissão das faturas para gerar Insights.
 * Automatizar o processo de criação de clusters para refazer os grupos depois de certo período determinado.
