@@ -144,7 +144,7 @@ Para deploy do modelo foram utilizados serviços da AWS (Amazon Web Service)
 
 ![Deploy AWS](img/Deploy-AWS.png)
 
-Com o modelo implementado, foram gerados: o [Relatório]() respondendo as necessidades do time de marketing, uma lista com os [clientes classificados](reports/clusters.csv), uma versão estática do [Dashboard](reports/Dashboard%20Programa%20Insiders.pdf) para fins de conveniência e a **versão interativa** do Dashboard publicado no _Power BI Service_, disponível no botão abaixo.
+Com o modelo implementado, foram gerados: o [Relatório](reports/report.pdf) respondendo as necessidades do time de marketing, uma lista com os [clientes classificados](reports/clusters.csv), uma versão estática do [Dashboard](reports/Dashboard%20Programa%20Insiders.pdf) para fins de conveniência e a **versão interativa** do Dashboard publicado no _Power BI Service_, disponível no botão abaixo.
 
 [<img style="display: block; margin-right: auto; margin-left: auto" src="https://img.shields.io/badge/power_bi-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" width="250" />](https://app.powerbi.com/view?r=eyJrIjoiN2Y3ZTExOWQtOTdkMS00YTA0LTgyOWUtMzIxNzQ1ZWIyMjM3IiwidCI6ImRjNzFjN2RmLTFiMjItNDFiNS05NDFkLTcyNTA4YTM4NzQ2NiJ9)
 
